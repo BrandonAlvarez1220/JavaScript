@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de vectores JS</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+      var num,i=0; 
+
+      num = parseInt(prompt("SUMA DE VECTORES\n\nDigita la cantidad de elementos del arrglo: "));
+        
+      var a=[num];
+      var b=[num];
+      var c=[num];
+
+      //Para el vector A y B 
+        for(i=0;i<num;i++) {
+        a[i]=parseInt(prompt("Digita el elemento "+i+" del arreglo A"));
+        b[i]=parseInt(prompt("Digita el elemento "+i+" del arreglo B"));
+        }
+       
+        //Suma de vectores 
+
+        for(i=0;i<num;i++){
+            c[i]= a[i]+b[i];
+        }
+
+        //Mostrar resultados
+
+        for(i=0;i<num;i++){
+
+            document.write("<br>"+a[i]+" + "+b[i]+ "= "+c[i]);
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
